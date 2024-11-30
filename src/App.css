@@ -42,6 +42,11 @@ h3 {
   color: rgb(80, 76, 72);
 }
 
+h4 {
+  font-weight: normal;
+  margin: 6px 0px;
+}
+
 .header {
   display: flex;
   background-color: #ffefd5;
@@ -56,7 +61,6 @@ h3 {
   font-weight: bolder;
   background-color: #ffefd5;
   color: rgb(54, 52, 50);
-  margin-bottom: 0px;
 }
 
 #home-button {
@@ -171,7 +175,7 @@ h3 {
 
 #main-menu li {
   position: relative;
-  padding: 10px 15px;
+  padding: 10px 5px;
   margin: 10px 0;
   background-color: #f9f9f9; /* Light background */
   border-radius: 8px; /* Rounded corners */
@@ -356,7 +360,6 @@ h3 {
 
 #projects {
     display: block;
-    padding: 0px 20px;
     padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -374,7 +377,7 @@ h3 {
 }
 
 .project {
-  width: 24%;
+  width: 20%;
   padding: 16px;
   
 }

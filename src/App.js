@@ -1,6 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import myphoto3 from './images/myphoto3.jpeg';
+import flapppy from './images/flapppy.png';
+import games from './images/games.jpg';
+import holidays from './images/holidays.jpg';
+import home from './images/home.png';
+import painting from './images/painting.jpg';
+import weatherlogo from './images/weatherlogo.png';
+
+
 
 function MenuBar() {
   return (
@@ -116,6 +124,7 @@ export function Resume() {
   return (
   <div className="home-with-header">
     <TopBar/>
+    <MenuBar/>
   <section id="resume">
       <div className="timeline-section">
         
@@ -253,64 +262,65 @@ export function Resume() {
       <div className="clear"></div>
       <a href="#" className="button transition">Download PDF Resume File</a>
     </section>
-    <MenuBar/>
+    
     </div>)
 }
 export function Projects() {
   return (
     <div className="home-with-header">
       <TopBar/>
+      <MenuBar/>
     <section id="projects">
       <div className="extra-text">
         <h2>I've worked on some cool things... take a look!</h2>
       </div>
       <ul id="portfolio-list">
         <li className="project">
-          <a href="https://github.com/jimbucktwo/HolidayTracker" target="_blank"><img src="images/holidays.jpg" alt="holiday image"/></a>
+          <a href="https://github.com/jimbucktwo/HolidayTracker" target="_blank"><img src={holidays} alt="holiday image"/></a>
           <h3>International Holiday Tracker</h3>
           <p>Practices fetch request with Web API to display the holidays of certain countries.</p>
           
         </li>
 
         <li className="project">
-          <a href="https://github.com/jimbucktwo/FlappyBird" target="_blank"><img src="images/flapppy.png" alt="Flappy Bird"/></a>
+          <a href="https://github.com/jimbucktwo/FlappyBird" target="_blank"><img src={flapppy} alt="Flappy Bird"/></a>
           <h3>Flappy Bird</h3>
           <p>Flappy Bird replicate, simple web app game that practices DOM manipulation and event handlers.</p>
         </li>
         <li className="project">
-          <a href="https://github.com/jimbucktwo/PaintingGallery" target="_blank"><img src="images/painting-cover.jpg" alt="painting image"/></a>
+          <a href="https://github.com/jimbucktwo/PaintingGallery" target="_blank"><img src={painting} alt="painting image"/></a>
           <h3>Paintings Gallery</h3>
           <p>Gallery of classic paintings, practices event handlers and parsing data.</p>
         </li>
         <li className="project">
-          <a href="https://github.com/jimbucktwo/WeatherApp" target="_blank"><img src="images/weatherlogo.png" alt="weather image"/></a>
+          <a href="https://github.com/jimbucktwo/WeatherApp" target="_blank"><img src={weatherlogo} alt="weather image"/></a>
           <h3>WeatherApp</h3>
           <p>Simple Weather App, consumes OpenWeatherApp API and displays weather for various cities.</p>
         </li>
         
         <li className="project" >
-          <a href="#"><img src="images/games.jpg" alt="game image"/></a>
+          <a href="#"><img src={games} alt="game image"/></a>
           <h3>Project Title</h3>
           <p>Project Description</p>
         </li>
         <li className="project">
-          <a href="#"><img src="images/games.jpg" alt="game image"/></a>
+          <a href="#"><img src={games} alt="game image"/></a>
           <h3>Project Title</h3>
           <p>Project Description</p>
         </li>
         <li className="project">
-          <a href="#"><img src="images/games.jpg" alt="game image"/></a>
+          <a href="#"><img src={games} alt="game image"/></a>
           <h3>Project Title</h3>
           <p>Project Description</p>
         </li>
         <li className="project">
-          <a href="#"><img src="images/games.jpg" alt="game image"/></a>
+          <a href="#"><img src={games} alt="game image"/></a>
           <h3>Project Title</h3>
           <p>Project Description</p>
         </li>
       </ul>
     </section>
-    <MenuBar/>
+    
     </div>
   )
 }
@@ -319,6 +329,7 @@ export function Contact(){
   return (
     <div className="home-with-header">
       <TopBar/>
+      <MenuBar/>
       <section id="contact">
       
       <h2>Contact Me</h2>
@@ -344,7 +355,7 @@ export function Contact(){
       </div>
       </form>
   </section>
-  <MenuBar/>
+  
     </div>
   )
 
