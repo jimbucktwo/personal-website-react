@@ -7,27 +7,30 @@ import holidays from './images/holidays.jpg';
 import home from './images/home.png';
 import painting from './images/painting.jpg';
 import weatherlogo from './images/weatherlogo.png';
+import {Link} from "react-router-dom"
 
 
 
-function MenuBar() {
+export function MenuBar() {
   return (
     <div>
+      <nav>
           <ul id="main-menu">
             <li id="main-menu1">
-              <a href="resume" data-id="resume">Resume</a>
+              <Link to="/resume">Resume</Link>
             </li>
             <li id="main-menu2">
-              <a href="projects" data-id="projects">Projects</a>
+              <Link to="/projects">Projects</Link>
             </li>
             <li id="main-menu3">
-              <a href="contact" data-id="contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
+        </nav>
     </div>
   )
 }
-function TopBar() {
+export function TopBar() {
   return (<div className="header">
         <ul className="socialicons">
           <li>
@@ -60,7 +63,7 @@ function TopBar() {
           </li>
         </ul>
         <h1 id="main-title">My Personal Website</h1>
-        <a href="home" id="home-button">&#xe900;</a>
+        <Link id="home-button" to="/home">&#xe900;</Link>
       </div>)
 }
 
